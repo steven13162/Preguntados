@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trivia Tecnologicas</title>
+    <meta charset="utf-8">
+    <link href="EstilosPreguntas.css" type="text/css" rel="stylesheet">
+    <script src="jquery-2.2.0.min.js"></script>
+    <script src="underscore-1.8.3.min.js"></script>
+    <script src="Preguntas.js">validar()</script>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <img src="Logo_1.png" style="width:250px; height: 100px;">
+        <h2>¿Que Tanto Sabes De Ingenieria de Sistemas y Software?</h2>
+      </div>
+      <div class="countdown"><span class="time_left">0s</span></div>
+      <div class="points"><span class="points">0 points</span></div>
+    </header>
+    <div class="start">
+      <div class="card">
+        <p>Da click en jugar para iniciar la partida</p>
+      <div class="start"> 
+             <input type="text" id="NombreJugador" name="TextoBtt" value="" placeholder=" Ingresa tu Nickname "> </input>
+      </div>
+      <br>
+        <button class="start" onclick="validar(NombreJugador);"> JUGAR </button>
+      </div>
+      <div>
+        <H3>Integrantes del equipo: </H3>
+        <br>
+        <h3>
+          Omar Andres Bolaño Olivera<br>
+          Joan Sebastian Jimenez Mendivelso<br>
+          Steven Alejandro Baquero Morantes
+        </h3>
+      </div>  
+    </div>
+    <div class="play">
+      <div class="questions"></div>
+    </div>
+    <div class="finish card">
+      <p class="times_up">¡Opss tu tiempo termino!</p>
+      <p>Has obtenido</p>
+      <p class="final_points">0 puntos</p>
+      <div class="play_again">
+        <button>Quiero Volver A Jugar</button>
+      </div>
+    </div>
+      </body>
+</html>
